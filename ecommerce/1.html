@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <!-- Form to add a product -->
+    <form id="addProductForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+        
+        <label for="productExpense">Expense:</label>
+        <input type="number" id="productExpense" required>
+
+        <button type="button" onclick="addProduct()">Add Product</button>
+    </form>
+
+    <!-- Display products and total expense -->
+    <div id="productList">
+        <h2>Product List</h2>
+        <ul id="products"></ul>
+        <p>Total Expense: <span id="totalExpense">0</span></p>
+    </div>
+
+    <!-- JavaScript for CRUD operations -->
+    <script src="second.js"></script>
+</body>
+</html>
+
