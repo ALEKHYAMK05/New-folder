@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Appointment App</title>
+</head>
+<body>
+
+  <h1>Booking Appointment App</h1>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" required><br>
+
+  <label for="time">Time:</label>
+  <input type="time" id="time" required><br>
+
+  <label for="clientName">Client Name:</label>
+  <input type="text" id="clientName" required><br>
+
+  <button onclick="bookAppointment()">Book Appointment</button>
+
+  <h2>Previously Booked Appointments</h2>
+  <ul id="appointmentsList"></ul>
+
+  <form id="editForm" style="display: none;">
+    <h2>Edit Appointment</h2>
+    <label for="editDate">Date:</label>
+    <input type="date" id="editDate" required><br>
+
+    <label for="editTime">Time:</label>
+    <input type="time" id="editTime" required><br>
+
+    <label for="editClientName">Client Name:</label>
+    <input type="text" id="editClientName" required><br>
+
+    <button type="button" onclick="updateAppointment()">Update Appointment</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
